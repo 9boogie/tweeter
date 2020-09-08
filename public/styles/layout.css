@@ -14,15 +14,13 @@ html {
  * Global layout stuff
  */
 
- * {
-  font-family: 'Source Sans Pro', sans-serif;
- }
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*

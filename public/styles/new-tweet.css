@@ -1,6 +1,6 @@
 #text-box {
   width: 100%;
-  background-color: #f4f1ec;
+  background-color: #F5F1EC;
   border: none;
   border-bottom: 5px solid black;
 }
@@ -13,6 +13,6 @@
 }
 
 .tweet-button {
-  background-color: #434fab;
+  background-color: #434EA7;
   color: #FFF;
 }

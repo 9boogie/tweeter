@@ -6,20 +6,20 @@
   align-content: center;
   padding-left: 1em;
   padding-right: 1em;
-  color: #5D6D7E;
+  color: #545149;
 }
 
 .exist-tweet:hover {
-  box-shadow: 5px 10px #E2DCF5;
+  box-shadow: 5px 10px #C5CAE6;
 }
 
 .exist-tweet:hover .user-id {
-  color: #E2DCF5;
+  color: #C5CAE6;
 }
 
 .tweet-body {
   flex-grow: 2;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #545149;
   width: 100%;
 }
 

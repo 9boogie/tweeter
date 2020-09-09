@@ -1,18 +1,18 @@
-#textBox {
+#text-box {
   width: 100%;
   background-color: #f4f1ec;
   border: none;
   border-bottom: 5px solid black;
 }
 
-.bottomBody {
+.bottom-body {
   display: flex;
   justify-content: space-between;
   font-family: "Bungee", cursive;
   padding-top: 0.5em;
 }
 
-.tweetButton {
+.tweet-button {
   background-color: #434fab;
   color: #FFF;
 }

@@ -1,0 +1,55 @@
+.exist-tweet {
+  display: flex;
+  flex-flow: column;
+  border: 5px solid;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #5D6D7E;
+}
+
+.exist-tweet:hover {
+  box-shadow: 5px 10px #85C1E9;
+}
+
+.exist-tweet:hover .user-id {
+  color: #888888;
+}
+
+.tweet-body {
+  flex-grow: 2;
+  border-bottom: 5px solid black;
+  width: 100%;
+}
+
+.days-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.days-icon h5 {
+  font-size: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1.5em;
+}
+
+.account-name {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+.user-id {
+  color: #f4f1ec;
+}
+
+div .material-icons {
+  font-size: 15px;
+  color: #4056A1;
+}

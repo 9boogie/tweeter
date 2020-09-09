@@ -25,6 +25,9 @@
     <!-- new-tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <!-- Exist-tweet CSS -->
+    <link rel="stylesheet" href="/styles/old-tweets.css" type="text/css" />
+
     <!-- External icons -->
     <script src="https://kit.fontawesome.com/90e4eb8664.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -68,27 +71,40 @@
           <div>
             <h4>What are you humming about?</h4>
             <label form="tweet-text"></label>
-            <textarea name="text" id="textBox"></textarea>
+            <textarea name="text" id="text-box"></textarea>
           </div>
-          <div class="bottomBody">
-            <button type="button" class="tweetButton">Tweet</button>
+          <div class="bottom-body">
+            <button type="submit" class="tweet-button">Tweet</button>
             <output name="counter" class="counter" form="tweet-text">140</output>
           </div>
         </form>
       </section>
-      <section>
-        <article>
-          <h5>
-            Newton
+      <section class="old-tweets">
+        <article class="exist-tweet">
+          <h5 class='account-name'>
+            <span class="user-name">Newton</span>
+            <span class="user-id">@SirIssac</span>
           </h5>
-          <h4>
-            Hello, we are making Tweet! 
-          </h4>
-          <footer>
-            10 days ago
-            <span class="material-icons">
-              flag
-            </span>
+          <div class="tweet-body">
+            <p>
+              Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan egrg hthththtg
+            </p>
+          </div>
+          <footer class="days-icon">
+            <h5>
+              10 days ago
+            </h5>
+            <div>
+              <span class="material-icons">
+                flag
+              </span>
+              <span class="material-icons">
+                cached
+              </span>
+              <span class="material-icons">
+                favorite
+              </span>
+            </div>
           </footer>
         </article>
       </section>

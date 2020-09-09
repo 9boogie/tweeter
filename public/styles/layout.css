@@ -34,3 +34,7 @@ body {
    flex-direction: column;
    justify-content: space-around;
  }
+
+ section {
+   margin-bottom: 1em;
+ }

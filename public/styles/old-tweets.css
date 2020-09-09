@@ -10,11 +10,11 @@
 }
 
 .exist-tweet:hover {
-  box-shadow: 5px 10px #85C1E9;
+  box-shadow: 5px 10px #E2DCF5;
 }
 
 .exist-tweet:hover .user-id {
-  color: #888888;
+  color: #E2DCF5;
 }
 
 .tweet-body {

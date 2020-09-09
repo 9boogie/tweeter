@@ -10,6 +10,12 @@ nav {
   padding: 1.5em;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .logo {
   font-family: "Bungee", cursive;
   font-size: 1.5em;

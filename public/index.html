@@ -30,6 +30,10 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
@@ -57,15 +61,19 @@
       <section class="new-tweet">
         <form method="POST" action="/tweets">
           <div>
-          <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <h4>What are you humming about?</h4>
+            <label form="tweet-text"></label>
+            <textarea name="text" id="textBox"></textarea>
           </div>
           <div class="bottomBody">
-            <button type="submit" class="tweetButton">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <button type="button" class="tweetButton">Tweet</button>
+            <output name="counter" class="counter" form="tweet-text">140</output>
           </div>
         </form>
       </section>
     </main>
+
+    <!-- Char count JS-->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </body>
 </html>

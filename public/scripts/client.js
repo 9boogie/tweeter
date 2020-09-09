@@ -1,8 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 $(document).ready(function() {
   const data = [
     {
@@ -31,38 +26,40 @@ $(document).ready(function() {
 
 const createTweetElement = function(tweet) {
   const userData = tweet;
-  let $tweet = $(`<article class="exist-tweet">
-  <h5 class='account-name'>
-    <span class="user-name">
-      <img src=${userData.user.avatars} alt="userImage">
-      ${userData.user.name}
-    </span>
-    <span class="user-id">
-      ${userData.user.handle}
-    </span>
-  </h5>
-  <div class="tweet-body">
-    <p>
-      ${userData.content.text}
-    </p>
-  </div>
-  <footer class="days-icon">
-    <h5>
-      ${userData.created_at}
+  const passedDays = moment(userData.created_at).startOf('day').fromNow()
+  let $tweet = $(`
+  <article class="exist-tweet">
+    <h5 class='account-name'>
+      <span class="user-name">
+        <img src=${userData.user.avatars} alt="userImage">
+        ${userData.user.name}
+      </span>
+      <span class="user-id">
+        ${userData.user.handle}
+      </span>
     </h5>
-    <div>
-      <span class="material-icons">
-        flag
-      </span>
-      <span class="material-icons">
-        cached
-      </span>
-      <span class="material-icons">
-        favorite
-      </span>
+    <div class="tweet-body">
+      <p>
+        ${userData.content.text}
+      </p>
     </div>
-  </footer>
-</article>`);
+    <footer class="days-icon">
+      <h5>
+        ${passedDays}
+      </h5>
+      <div>
+        <span class="material-icons">
+          flag
+        </span>
+        <span class="material-icons">
+          cached
+        </span>
+        <span class="material-icons">
+          favorite
+        </span>
+      </div>
+    </footer>
+  </article>`);
 
   return $tweet;
 }
@@ -76,8 +73,5 @@ const renderTweets = function(tweets) {
 }
 
 renderTweets(data);
-
-const tester = moment().startOf('day').fromNow()
-console.log(tester);
 
 });

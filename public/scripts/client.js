@@ -18,6 +18,12 @@ loadTweets();
 const createTweetElement = function(tweet) {
   const userData = tweet;
   const passedDays = moment(userData.created_at).fromNow()
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   let $tweet = $(`
   <article class="exist-tweet">
     <h5 class='account-name'>
@@ -67,6 +73,7 @@ const renderTweets = function(tweets) {
 }
 
 const $postForm = $('#new-post');
+$('.error-box').slideUp(0);
 
 $postForm.on('submit', function (event) {
   event.preventDefault();
@@ -74,14 +81,16 @@ $postForm.on('submit', function (event) {
   const wordCount = $(this).find('.counter').val();
 
   if(wordCount >= 140) {
-    alert('Please say something :)')
+    const msg = 'No MSG! Please type something.'
+    $('.error-box').text(msg).slideDown();
   } else if (wordCount < 0) {
-    alert('Too many words! 140 characters limits!')
+    const msg = 'Too long! We have 140 chars limits.'
+    $('.error-box').text(msg).slideDown();
   } else {
     $.post('http://localhost:8080/tweets',serializedData)
       .then(() => {
         loadTweets();
-  
+        $('.error-box').slideUp(0);
         $("#text-box").val('');
         $(".counter").text(140);
       })

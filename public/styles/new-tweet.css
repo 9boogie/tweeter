@@ -16,3 +16,12 @@
   background-color: #434EA7;
   color: #FFF;
 }
+
+.error-box {
+  border: 5px solid red;
+  color: red;
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 20px;
+}

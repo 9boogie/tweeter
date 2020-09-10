@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  // --- our code goes here ---
-  console.log('Testing! ');
-
   $('#text-box').on("keyup", function(e) {
     const currentLength = $(this).val().length;
     const result = 140 - currentLength;
@@ -14,5 +11,4 @@ $(document).ready(function() {
     }
 
     });
-
 });

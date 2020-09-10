@@ -55,3 +55,7 @@ div .material-icons {
   font-size: 15px;
   color: #4056A1;
 }
+
+#tweets-container {
+  margin-bottom: 1em;
+}

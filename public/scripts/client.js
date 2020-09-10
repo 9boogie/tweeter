@@ -31,7 +31,7 @@ const createTweetElement = function(tweet) {
     </h5>
     <div class="tweet-body">
       <p>
-        ${userData.content.text}
+        ${escape(userData.content.text)}
       </p>
     </div>
     <footer class="days-icon">
@@ -72,14 +72,12 @@ $postForm.on('submit', function (event) {
   event.preventDefault();
   const serializedData = $(this).serialize();
   const wordCount = $(this).find('.counter').val();
-  console.log('word',wordCount);
 
   if(wordCount >= 140) {
     alert('Please say something :)')
   } else if (wordCount < 0) {
     alert('Too many words! 140 characters limits!')
   } else {
-    console.log('good')
     $.post('http://localhost:8080/tweets',serializedData)
       .then(() => {
         loadTweets();

@@ -81,7 +81,7 @@ $postForm.on('submit', function (event) {
   const wordCount = $(this).find('.counter').val();
 
   if(wordCount >= 140) {
-    const msg = 'No MSG! Please type something.'
+    const msg = "No MSG! Please type something.";
     $('.error-box').text(msg).slideDown();
   } else if (wordCount < 0) {
     const msg = 'Too long! We have 140 chars limits.'

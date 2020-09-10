@@ -1,16 +1,11 @@
-nav {
+.navbar {
   display: flex;
-  flex-basis: 100%;
-  flex-wrap: wrap;
   height: 120px;
-  background-color: #4056A1;
+  background-color:	#DF9A02;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   color: #FFFFFF;
-  align-content: center;
   justify-content: space-between;
   padding: 1.5em;
-}
-
-.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,4 +19,10 @@ nav {
 .write {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    background-color: #4056A1;
+  }
 }

@@ -7,4 +7,12 @@ header {
   align-items: center;
   background-color:	#DF9A02;
   background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 50%;
+    margin: 5rem 2.5rem;
+  }
 }

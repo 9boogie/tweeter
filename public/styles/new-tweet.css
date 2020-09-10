@@ -1,8 +1,11 @@
 #text-box {
   width: 100%;
+  flex-wrap: wrap;
   background-color: #F5F1EC;
   border: none;
   border-bottom: 5px solid black;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .bottom-body {

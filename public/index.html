@@ -69,7 +69,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form method="POST" action="/tweets">
+        <form id="new-post">
           <div>
             <h4>What are you humming about?</h4>
             <label form="tweet-text"></label>
@@ -80,36 +80,6 @@
             <output name="counter" class="counter" form="tweet-text">140</output>
           </div>
         </form>
-      </section>
-      
-      <section class="old-tweets">
-        <article class="exist-tweet">
-          <h5 class='account-name'>
-            <span class="user-name">Random</span>
-            <span class="user-id">@MrUnknown</span>
-          </h5>
-          <div class="tweet-body">
-            <p>
-              Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan egrg hthththtg
-            </p>
-          </div>
-          <footer class="days-icon">
-            <h5>
-              10 days ago
-            </h5>
-            <div>
-              <span class="material-icons">
-                flag
-              </span>
-              <span class="material-icons">
-                cached
-              </span>
-              <span class="material-icons">
-                favorite
-              </span>
-            </div>
-          </footer>
-        </article>
       </section>
 
       <section id='tweets-container'>

@@ -7,11 +7,12 @@ $(document).ready(function() {
     const result = 140 - currentLength;
     const charCount = $(this).parent().parent().find(".counter")
 
-    if (currentLength >= 140) {
+    if (currentLength > 140) {
       charCount.text(result).css({'color': 'red'});
+    } else {
+      charCount.text(result).css({'color': 'black'});
     }
 
-    charCount.text(result);
     });
 
 });

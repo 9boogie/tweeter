@@ -48,15 +48,22 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
+    <!-- Disable viewport zooming -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="navbar">
       <span class="logo">tweeter</span>
-      <div>
-        <span class="write">Write</span>
-        <span>a new tweet</span>
+      <div class="nav-sentence">
+        <div>
+          <button type="button" class="nav-button"><b class="bold-word">Write</b> a new tweet</button>
+        </div>
+        <div class="double-arrow">
+          <i class="fas fa-angle-double-down"></i>
+        </div>
       </div>
     </nav>
 
@@ -66,7 +73,7 @@
           <img src="/images/profile-hex.png"> 
       </div>
       <div>
-        <span class="write">Jaeyoung</span>
+        <span class="bold-word">Jaeyoung</span>
         <span> Kim</span>
       </div>
   </header>
@@ -89,11 +96,12 @@
         </form>
       </section>
 
+      <!-- Pre-Existed Tweets -->
       <section id='tweets-container'>
       </section>
     </main>
 
-    <!-- Char count JS-->
+    <!-- Char count JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </body>
 </html>

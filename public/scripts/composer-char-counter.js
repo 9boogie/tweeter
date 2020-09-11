@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $('#text-box').on("keyup", function(e) {
+  $('#text-box').on("keyup", function() {
     const currentLength = $(this).val().length;
     const result = 140 - currentLength;
-    const charCount = $(this).parent().parent().find(".counter")
+    const charCount = $(this).parent().parent().find(".counter");
 
     if (currentLength > 140) {
       charCount.text(result).css({'color': 'red'});
@@ -10,5 +10,5 @@ $(document).ready(function() {
       charCount.text(result).css({'color': 'black'});
     }
 
-    });
+  });
 });

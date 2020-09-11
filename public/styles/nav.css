@@ -11,18 +11,52 @@
   width: 100%;
 }
 
+.nav-sentence {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   font-family: "Bungee", cursive;
   font-size: 1.5em;
 }
 
-.write {
+.navbar div button {
+  color: white;
+  background-color:	#DF9A02;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  border: none;
+}
+
+.bold-word {
   font-weight: bold;
   font-size: 1.2em;
 }
 
+@keyframes updown {
+  0%   {top: 0px;}
+  25%  {top: 10px;}
+  75%  {top: 5px}
+  100% {top: 10px;}
+}
+
+.double-arrow {
+  display: flex;
+  justify-content: center;
+  height: 10px;
+  color:red;
+  margin-top: 3px;
+  position: relative;
+  animation: updown 2s infinite;
+}
+
 @media only screen and (min-width: 1024px) {
   .navbar {
+    background-color: #4056A1;
+  }
+
+  .navbar div button {
     background-color: #4056A1;
   }
 }

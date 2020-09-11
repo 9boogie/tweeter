@@ -10,7 +10,9 @@ Single Page Twitter with following behaviours:
 Practice of HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
 ## Final Product
-
+!["Screenshot of Main Page(DeskTop Ver)"](https://github.com/9boogie/tweeter/blob/master/docs/tweet-main-page(DeskTop%20ver).png)
+!["Screenshot of Main Page(Mobile Ver)"](https://github.com/9boogie/tweeter/blob/master/docs/tweet-main-page(mobile%20ver).png)
+!["Screenshot of tweet error box"](https://github.com/9boogie/tweeter/blob/master/docs/tweet-error-msg.png)
 
 ## Getting Started
 
